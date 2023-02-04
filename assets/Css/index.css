@@ -354,7 +354,9 @@ footer a {
     .logo {
         width: auto;
     }
-
+p{
+    font-weight: 700;
+}
     .Container {
         flex-wrap: wrap;
         height: 100%;
