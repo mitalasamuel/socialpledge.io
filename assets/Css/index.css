@@ -317,10 +317,12 @@ hr {
     align-items: center;
     justify-content: space-around;
 }
-.box a{
+
+.box a {
     color: var(--PrimaryColor);
     font-family: var(--fontFamily);
 }
+
 h1,
 h2,
 h3,
@@ -420,6 +422,10 @@ footer a {
 
     .Container img {
         width: 100%;
+    }
+
+    .mainContainer .Container img {
+        width: auto;
     }
 
     .mainimg {
