@@ -420,12 +420,8 @@ footer a {
         position: relative;
     }
 
-    .Container img {
+    .Container .box img {
         width: 100%;
-    }
-
-    .mainContainer .Container img {
-        width: auto;
     }
 
     .mainimg {
