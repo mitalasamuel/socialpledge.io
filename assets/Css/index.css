@@ -541,4 +541,9 @@ footer .Container li {
         color: white;
         font-size: .7rem;
     }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
