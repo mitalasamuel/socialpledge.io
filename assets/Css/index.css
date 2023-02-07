@@ -5,6 +5,7 @@
     --margin: 0;
     --buttonMargin: 2rem 0;
     --padding: 6rem;
+    --mainMargin: 6rem 0;
     --paddingNav: 2rem 6rem;
     --fontFamily: 'Inter';
     --ContentFamily: 'Montserrat';
@@ -178,7 +179,7 @@ p {
 
 .Container .image img {
     position: absolute;
-    top: 10rem;
+    top: 0;
     right: 0rem;
 }
 
@@ -195,14 +196,15 @@ p {
 .SignUp,
 .MediaSupport,
 .Refer,
-.pages {
+.pages,
+.freeAccount {
     align-items: center;
     width: 100%;
+    margin: var(--mainMargin);
     display: flex;
     flex-direction: column;
     z-index: 1000;
     position: relative;
-    margin: var(--margin);
 }
 
 /* -------------------------Dashboard------------------------- */
@@ -338,7 +340,8 @@ hr {
 }
 
 .how a,
-.fulfil a {
+.fulfil a,
+.pages a {
     font-size: .8rem;
     line-height: 4rem;
     color: var(--PrimaryColor);
@@ -529,9 +532,11 @@ footer .Container li {
         display: flex;
         justify-content: center;
     }
-img{
-    margin: 2rem 0;
-}
+
+    img {
+        margin: 2rem 0;
+    }
+
     button a {
         color: white;
         font-size: .7rem;
