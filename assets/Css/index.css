@@ -354,7 +354,7 @@ h1,
 h2,
 h3,
 h5 {
-    line-height: 1rem;
+    line-height: 2.8rem;
     font-family: var(--fontFamily);
     color: #11193C;
 }
