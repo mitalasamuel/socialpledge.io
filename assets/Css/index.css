@@ -422,7 +422,7 @@ footer .Container li{
     }
 
     .mainContainer {
-        box-shadow: none;
+        box-shadow: transparent;
         padding: 0;
         margin: var(--mmain);
         flex-wrap: wrap;
