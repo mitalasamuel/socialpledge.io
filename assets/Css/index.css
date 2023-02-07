@@ -490,7 +490,7 @@ footer .Container a {
         margin: 0;
     }
 
-    .how .Container img {
+    .how .Container img ,.fulfil .Container img{
         width: 95%;
     }
     button {
