@@ -373,16 +373,13 @@ footer {
 }
 footer .Container li a{
     color: var(--footerContent);
+    line-height: 1.6rem;
 }
 footer .Container li{
     color: var(--footerContent);
     font-family: var(--ContentFamily);
-    font-weight: 450;
+ font-weight: 450;
     margin: var(--m1);
-}
-
-.Container .box {
-    padding: 0 2rem;
 }
 
 /* --------------------------------free --------------------------------*/
