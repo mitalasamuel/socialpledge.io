@@ -70,7 +70,9 @@ nav a,
     color: var(--mainColor);
     font-weight: var(--contentWeight);
 }
-
+.navContainer button{
+    background-color: transparent;
+}
 button a {
     color: white;
 }
@@ -395,7 +397,12 @@ footer .Container a {
         width: auto;
     }
 
+    .logo img {
+        width: 2rem;
+    }
+
     p {
+        font-size: .8rem;
         font-weight: 500;
     }
 
@@ -443,7 +450,11 @@ footer .Container a {
     }
 
     .navContainer {
-        width: 100%;
+        width: 50%;
+    }
+
+    .navContainer h3 {
+        font-size: .9rem;
     }
 
     .Container .homeContent {
@@ -490,15 +501,19 @@ footer .Container a {
         margin: 0;
     }
 
-    .how .Container img ,.fulfil .Container img{
+    .how .Container img,
+    .fulfil .Container img {
         width: 95%;
     }
+
     button {
         padding: .5rem .8rem;
+        display: flex;
+        justify-content: center;
     }
 
-button a {
-    color: white;
-font-size: 1rem;
-}
+    button a {
+        color: white;
+        font-size: .7rem;
+    }
 }
