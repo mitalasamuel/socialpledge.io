@@ -358,7 +358,10 @@ h5 {
     font-family: var(--fontFamily);
     color: #11193C;
 }
-
+input{
+    border: none;
+    background-color: var(--footerContent);
+}
 footer {
     margin: 0;
     background-color: var(--footerColor);
