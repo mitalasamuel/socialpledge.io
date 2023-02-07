@@ -2,10 +2,11 @@
 
 var shopData = [
     {
-      title: "Con Air",
-      description: 'Great move loved it. Watched it 10 times!',
+      title: "Create a pledge card",
+      description: 'No credit card required',
       image: 'https://www.placecage.com/100/150',
       price: 2,
+      
     }, 
       {
       title: 'Face off',
@@ -40,6 +41,7 @@ var shopData = [
         <h3>$${shopData[i].price}</h3>
         <h1> ${shopData[i].title}</h1>
         <p> ${shopData[i].description}</p>
+        <input type="text" placeholder='Password'>
         <button>Buy now</button>
      </div>
     `;

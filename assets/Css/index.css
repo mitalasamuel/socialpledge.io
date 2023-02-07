@@ -4,6 +4,7 @@
 :root {
     --margin: 0rem 0;
     --padding: 6rem;
+    --paddingNav: 2rem 6rem;
     --fontFamily: 'Inter';
     --ContentFamily: 'Montserrat';
     --PrimaryColor: #2DD393;
@@ -19,8 +20,9 @@
     --mobilePadding: 1rem;
     --box: rgba(204, 196, 196, 0.334);
     --spcial: rgb(244, 243, 243);
-    --m1: 0.4;
+    --m1: 0.4rem;
     --mhr: 0 1rem;
+    --mmain: 0 2rem;
 }
 
 * {
@@ -36,6 +38,7 @@
 
 .wrapContainer .Container {
     padding: var(--padding);
+    width: 100%;
 }
 
 /* --------------Navbar --------------*/
@@ -48,7 +51,7 @@ nav {
     font-family: var(--fontFamily);
     align-items: center;
     justify-content: space-between;
-    padding: var(--padding);
+    padding: var(--paddingNav);
     z-index: 1000;
 }
 
@@ -105,7 +108,7 @@ button {
     background-color: var(--mainColor);
     height: .1rem;
     width: 1rem;
-    margin: .4rem;
+    margin: var(--m1)
 }
 
 .navLinks {
@@ -117,7 +120,7 @@ button {
     align-items: center;
     background-color: var(--copyRight);
     height: 100vh;
-    top: -100%;
+    top: -190%;
     font-size: var(--navLink);
     font-family: var(--ContentFamily);
     line-height: 3rem;
@@ -144,6 +147,7 @@ button {
 
 /*------------------- container -------------------*/
 .Container {
+    position: relative;
     display: flex;
     /* padding: var(--padding); */
     justify-content: space-between;
@@ -269,7 +273,7 @@ hr {
 .TopNav img {
     border-radius: 50%;
     height: 3rem;
-    margin: 0 1rem;
+    margin: var(--mhr);
     /* border: 1px solid palevioletred; */
 }
 
@@ -322,9 +326,20 @@ hr {
     justify-content: space-around;
 }
 
-.box a {
+.how .Container img {
+    object-fit: contain;
+}
+
+.how a ,.fulfil a{
     color: var(--PrimaryColor);
     font-family: var(--fontFamily);
+}
+
+.boxBig {
+    display: flex;
+    width: 100%;
+    align-items: center;justify-content: center;
+
 }
 
 h1,
@@ -340,7 +355,7 @@ footer {
     width: 100%;
 }
 
-footer a {
+footer .Container a {
     color: var(--footerContent);
     font-family: var(--ContentFamily);
     font-weight: 300;
@@ -390,12 +405,16 @@ footer a {
 
     .mainContainer {
         padding: 0;
-        margin: 2rem 0;
+        margin: var(--mmain);
         flex-wrap: wrap;
         height: 100%;
         width: 100%;
-        /* background-color: rebeccapurple; */
 
+    }
+
+    .leftNav {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .Wrap {
