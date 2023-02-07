@@ -29,7 +29,7 @@
     box-sizing: border-box;
     list-style: none;
     padding: 0;
-    margin: none;
+    margin: 0;
     text-decoration: none;
 }
 
@@ -359,14 +359,18 @@ h5 {
 }
 
 footer {
+    margin: 0;
     background-color: var(--footerColor);
     width: 100%;
 }
-
-footer .Container a {
+footer .Container li a{
+    color: var(--footerContent);
+}
+footer .Container li{
     color: var(--footerContent);
     font-family: var(--ContentFamily);
-    font-weight: 300;
+    font-weight: 450;
+    margin: var(--m1);
 }
 
 .Container .box {
@@ -387,9 +391,10 @@ footer .Container a {
     align-items: center;
 }
 
-@media screen and (max-width: 736px) {
+@media only screen and (max-width: 600px) {
     .wrapContainer .Container {
         padding: var(--mobilePadding);
+        margin: 0;
     }
 
     .Refer .Container img {
