@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+    --bg: #F4F6F8;
+    --buttonMargin: 2rem 0;
+    --PrimaryColor: #2DD393;
+    --mainColor: #888888;
+    --mainMargin: 6rem 0 0 0;
+    --padding: 0 0 0 3rem;
+    --fontFamily: 'Inter';
+    --ContentFamily: 'Montserrat';
+    --PrimaryColor: #2DD393;
+    --fontSize: 1.2rem;
+    --navLink: 2rem;
+    --white: white;
+    --mobilePadding: 1rem;
+    --form: #FFFFFF;
+    --formmargin:10rem 3rem;
+    --formpadding: 3rem;
+    --ccc: #ccc;
+    --border: 1px solid #ccc;
+    --formborder: .2px solid #ccc;
+    --tag: 0 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    font-family: var(--ContentFamily);
+    background-color: var(--bg);
+}
+
+.Container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1,
+h2,
+h3,
+h5 {
+    line-height: 2.8rem;
+    font-family: var(--fontFamily);
+    color: #11193C;
+}
+.LeftContent{
+    width: 50%;
+}
+.LeftContent img{
+    width: 100%;
+}
+form {
+    margin: var(--formmargin);
+    padding: var(--formpadding);
+    line-height: 2rem;
+    border-radius: 1rem;
+    border: var(--formborder);
+    background-color: var(--form);
+}
+
+.name {
+    padding: var(--mobilePadding);
+    border-bottom: var(--border);
+    width: 100%;
+}
+
+.name input {
+    padding: 0;
+}
+
+.option {
+    margin: var(--mobilePadding);
+}
+
+.option select {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* padding: var(--mobilePadding); */
+}
+
+form input {
+    padding: var(--mobilePadding);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.create {
+    padding: var(--mobilePadding);
+}
+
+textarea {
+    width: 100%;
+    padding: var(--mobilePadding);
+    border: none;
+    border-top: var(--border);
+}
+
+.email {
+    border-bottom: var(--border);
+
+}
+
+.box {
+    border: var(--border);
+}
+
+p {
+    color: var(--mainColor);
+    font-size: .8rem;
+}
+
+.tag {
+    background-color: var(--ccc);
+    display: inline-flex;
+    padding: var(--tag);
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button {
+    margin: var(--buttonMargin);
+    width: 100%;
+    border: 1px solid var(--PrimaryColor);
+    padding: .7rem 2rem;
+    font-size: var(--fontSize);
+    background-color: var(--PrimaryColor);
+    border-radius: .4rem;
+}
+
+.Greenface {
+    color: var(--white);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+    background-color: var(--PrimaryColor);
+}
+
+.Small {
+    padding: 3rem;
+}
+
+.Greenface input:nth-child(0):before {
+    background-color:none;
+    position: absolute;
+    content: '';
+    margin-top: -7rem;
+    height: 8rem;
+    width: .1rem;
+}
+
+.Greenface input::before {
+    background-color: var(--white);
+    position: absolute;
+    content: '';
+    margin-top: -8rem;
+    height: 10rem;
+    width: .1rem;
+}
+
+.Greenface input {
+    display: flex;
+    justify-content: center;
+        padding: 1rem;
+    width: 15%;
+    outline: none;
+    margin: 0 1rem;
+    border: 1px solid white;
+}
+
+.Greenface .Small p {
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1rem;
+
+}
+
+.Small {
+    display: flex;
+}
+@media only screen and (max-width: 600px) {
+
+    .main {
+        margin: 0;
+        padding: 0;
+    }
+    .Container{
+    display: block;
+}
+form {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: .4rem;
+    border: var(--formborder);
+    background-color: var(--form);
+}
+.LeftContent{
+    width: 100%;
+}
+.Greenface {
+    width: 100%;
+    padding: var(--mobilePadding);
+}
+
+}
