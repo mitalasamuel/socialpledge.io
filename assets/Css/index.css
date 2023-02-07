@@ -3,7 +3,7 @@
 
 :root {
     --margin: 0;
-    --buttonMargin:2rem 0;
+    --buttonMargin: 2rem 0;
     --padding: 6rem;
     --paddingNav: 2rem 6rem;
     --fontFamily: 'Inter';
@@ -362,23 +362,27 @@ h5 {
     font-family: var(--fontFamily);
     color: #11193C;
 }
-input{
+
+input {
     border: none;
     background-color: var(--footerContent);
 }
+
 footer {
     margin: 0;
     background-color: var(--footerColor);
     width: 100%;
 }
-footer .Container li a{
+
+footer .Container li a {
     color: var(--footerContent);
     line-height: 1.6rem;
 }
-footer .Container li{
+
+footer .Container li {
     color: var(--footerContent);
     font-family: var(--ContentFamily);
- font-weight: 450;
+    font-weight: 450;
     margin: var(--m1);
 }
 
@@ -412,7 +416,6 @@ footer .Container li{
 
     .logo img {
         width: 2rem;
-        background-color: red;
     }
 
     p {
@@ -526,7 +529,9 @@ footer .Container li{
         display: flex;
         justify-content: center;
     }
-
+img{
+    margin: 2rem 0;
+}
     button a {
         color: white;
         font-size: .7rem;
