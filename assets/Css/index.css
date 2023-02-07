@@ -29,6 +29,7 @@
     box-sizing: border-box;
     list-style: none;
     padding: 0;
+    margin: none;
     text-decoration: none;
 }
 
@@ -70,9 +71,11 @@ nav a,
     color: var(--mainColor);
     font-weight: var(--contentWeight);
 }
-.navContainer button{
+
+.navContainer button {
     background-color: transparent;
 }
+
 button a {
     color: white;
 }
@@ -414,6 +417,7 @@ footer .Container a {
     }
 
     .mainContainer {
+        box-shadow: none;
         padding: 0;
         margin: var(--mmain);
         flex-wrap: wrap;
