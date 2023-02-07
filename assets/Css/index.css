@@ -494,6 +494,11 @@ footer .Container a {
         width: 100%;
     }
     button {
-        padding: .7rem 1rem;
+        padding: .5rem .8rem;
     }
+
+button a {
+    color: white;
+font-size: 1rem;
+}
 }
