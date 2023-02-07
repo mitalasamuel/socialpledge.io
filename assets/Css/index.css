@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap');
 
 :root {
-    --margin: 0rem 0;
+    --margin: 0;
+    --buttonMargin:2rem 0;
     --padding: 6rem;
     --paddingNav: 2rem 6rem;
     --fontFamily: 'Inter';
@@ -88,6 +89,7 @@ button a {
 }
 
 button {
+    margin: var(--buttonMargin);
     border: 1px solid var(--PrimaryColor);
     padding: .7rem 2rem;
     font-size: var(--fontSize);
@@ -337,6 +339,8 @@ hr {
 
 .how a,
 .fulfil a {
+    font-size: .8rem;
+    line-height: 4rem;
     color: var(--PrimaryColor);
     font-family: var(--fontFamily);
 }
@@ -411,6 +415,7 @@ footer .Container li{
 
     .logo img {
         width: 2rem;
+        background-color: red;
     }
 
     p {
