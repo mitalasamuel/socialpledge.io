@@ -296,7 +296,6 @@ button {
     padding: var(--mobilePadding);
 }
     .Greenface {
-        display: none;
         width: 100%;
         padding: 0;
     }

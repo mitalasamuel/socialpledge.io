@@ -449,7 +449,8 @@ footer .Container ul {
         display: flex;
         flex-wrap: wrap;
     }
-
+    .fundrise {
+    padding: var(--mobilePadding);}
     .fundrise h1 {
         font-size: 1.3rem;
         line-height: 3rem;
