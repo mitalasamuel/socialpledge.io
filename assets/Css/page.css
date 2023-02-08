@@ -145,6 +145,7 @@ textarea {
 p {
     color: var(--mainColor);
     font-size: .8rem;
+    font-weight: 300;
 }
 
 .tag {
