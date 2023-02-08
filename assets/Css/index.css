@@ -199,7 +199,9 @@
       z-index: 1000;
       position: relative;
   }
-
+.about .Container{
+    padding: 0 6rem;
+}
   .about,
   .Gallery,
   .fundrise,
@@ -442,6 +444,7 @@
 
       p {
           font-size: .8rem;
+          line-height: 1.1rem;
       }
 
       .Container {
@@ -484,6 +487,9 @@
           padding: var(--mobilePadding);
       }
 
+      .about .Container{
+        padding: 0 1rem;
+    }
       .fundrise {
           padding: var(--mobilePadding);
           height: 100%;
