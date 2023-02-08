@@ -3,6 +3,7 @@
 
 :root {
     --bg: #F4F6F8;
+    --Headers: #0E7E53;
     --buttonMargin: 2rem 0;
     --PrimaryColor: #2DD393;
     --mainColor: #888888;
@@ -16,12 +17,13 @@
     --white: white;
     --mobilePadding: 1rem;
     --form: #FFFFFF;
-    --formmargin:10rem 3rem;
+    --formmargin: 10rem 3rem;
     --formpadding: 3rem;
-    --ccc: #ccc;
+    --ccc: rgba(242, 241, 241, 0.754);
     --border: 1px solid #ccc;
     --formborder: .2px solid #ccc;
     --tag: 0 1rem;
+    --gpadding: 0 3rem;
 }
 
 * {
@@ -33,7 +35,7 @@
 }
 
 .main {
-    width: 100%;
+width: 100%;
     font-family: var(--ContentFamily);
     background-color: var(--bg);
 }
@@ -54,14 +56,37 @@ h5 {
     font-family: var(--fontFamily);
     color: #11193C;
 }
-.LeftContent{
+
+.LeftContent {
+    border-radius: 1rem;
+    margin: var(--formmargin);
     width: 50%;
 }
-.LeftContent img{
+
+.LeftContent img {
+    border-radius: 1rem 1rem 0 0;
     width: 100%;
+    margin-bottom: -2rem;
+}
+
+.Pledgebar {
+    background-color: #ccc;
+    width: 100%;
+    height: .2rem;
+    margin: 1rem 0;
+}
+
+.pledgebar {
+    background-color: goldenrod;
+    width: 70%;
+    height: .2rem;
+}.target {
+    background-color: goldenrod;
+    width: 100%;
+    height: .2rem;
 }
 form {
-    margin: var(--formmargin);
+    /* margin: var(--formmargin); */
     padding: var(--formpadding);
     line-height: 2rem;
     border-radius: 1rem;
@@ -125,11 +150,9 @@ p {
 
 .tag {
     background-color: var(--ccc);
-    display: inline-flex;
     padding: var(--tag);
     border-radius: .5rem;
     cursor: pointer;
-    width: 100%;
 }
 
 button {
@@ -148,7 +171,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--padding);
+    padding: var(--gpadding);
     background-color: var(--PrimaryColor);
 }
 
@@ -156,32 +179,74 @@ button {
     padding: 3rem;
 }
 
-.Greenface input:nth-child(0):before {
-    background-color:none;
-    position: absolute;
-    content: '';
-    margin-top: -7rem;
-    height: 8rem;
-    width: .1rem;
+.Greenface .Small {
+    width: 100%;
+    justify-content: space-between;
 }
 
-.Greenface input::before {
+.Greenface .amount,
+.Greenface .options,
+.Greenface textarea {
+    border-radius: 1rem;
+    border: none;
+    padding: var(--mobilePadding);
+    box-shadow: 0 1rem 3rem 0 rgba(37, 36, 36, 0.722);
+    font-size: 1rem;
+    background-color: var(--Headers);
+    color: var(--white);
+}
+
+
+.Greenface h2,
+.Greenface .Greenface h1,
+.Greenface h5,
+.Greenface p {
+    color: white;
+    font-weight: 400;
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.white a {
+    color: var(--PrimaryColor);
+
+}
+
+.Pledgewhite {
+    border: 1px solid white;
+}
+
+.Greenface .line::before {
     background-color: var(--white);
     position: absolute;
+    outline: none;
     content: '';
-    margin-top: -8rem;
+    margin-top: -7.5rem;
     height: 10rem;
     width: .1rem;
 }
 
-.Greenface input {
+.noline {
+
     display: flex;
     justify-content: center;
-        padding: 1rem;
+    padding: 1rem;
     width: 15%;
     outline: none;
     margin: 0 1rem;
-    border: 1px solid white;
+    border: 1px solid white !important;
+}
+
+.Greenface .line {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 15%;
+    outline: none;
+    margin: 0 1rem;
+    border: 1px solid white !important;
 }
 
 .Greenface .Small p {
@@ -192,30 +257,48 @@ button {
 }
 
 .Small {
+    justify-content: space-between;
     display: flex;
 }
+
 @media only screen and (max-width: 600px) {
 
     .main {
         margin: 0;
         padding: 0;
     }
-    .Container{
-    display: block;
+
+    .Container {
+        display: block;
+    }
+
+    form {
+        margin:1rem 0;
+        padding: 1rem;
+        border-radius: .4rem;
+        border: var(--formborder);
+        background-color: var(--form);
+    }
+.Small{
+    padding:1rem 0;
 }
-form {
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: .4rem;
-    border: var(--formborder);
-    background-color: var(--form);
+
+.Greenface .line::before {
+   
+    margin-top: -3.6rem;
+    height: 5rem;
+    width: .1rem;
 }
-.LeftContent{
-    width: 100%;
-}
-.Greenface {
-    width: 100%;
+    .LeftContent {
+        width: 100%;
+        margin: 0;
+    }
+.content{
     padding: var(--mobilePadding);
 }
+    .Greenface {
+        width: 100%;
+        padding: 0;
+    }
 
 }

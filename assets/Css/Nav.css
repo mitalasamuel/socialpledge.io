@@ -15,11 +15,6 @@
 }
 
 /* --------------Navbar --------------*/
-.logo {
-    z-index: 1000;
-    position: relative;
-}
-
 nav {
     position: fixed;
     width: 100%;
@@ -28,12 +23,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: var(--paddingNav);
-    z-index: 1000;
 }
 
 .menu ,.logo{
+    display: flex;
     position: relative;
-    z-index: 1000;
+z-index: 1000;
 }
 
 nav h3 {
@@ -116,7 +111,7 @@ button a {
 
 .navLinks.active {
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     transition: all .8s ease-out;
 }
 
@@ -124,6 +119,8 @@ button a {
 
 
     nav {
+       position: relative;
+        margin: 0;
         padding: var(--mobilePadding);
     }
 
