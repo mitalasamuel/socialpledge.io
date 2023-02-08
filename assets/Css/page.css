@@ -52,7 +52,7 @@ h1,
 h2,
 h3,
 h5 {
-    line-height: 2.8rem;
+
     font-family: var(--fontFamily);
     color: #11193C;
 }
@@ -88,7 +88,6 @@ h5 {
 form {
     /* margin: var(--formmargin); */
     padding: var(--formpadding);
-    line-height: 2rem;
     border-radius: 1rem;
     border: var(--formborder);
     background-color: var(--form);
