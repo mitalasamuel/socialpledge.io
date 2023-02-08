@@ -199,14 +199,12 @@
       z-index: 1000;
       position: relative;
   }
-.about .Container{
-    padding: 0 6rem;
-}
+
   .about,
   .Gallery,
   .fundrise,
   .Oxygen {
-      margin: 8rem 0;
+      margin: 8rem 6rem;
   }
 
   /* -------------------------Dashboard------------------------- */
@@ -384,7 +382,12 @@
       background-color: var(--footerContent);
   }
 
+  footer * {
+      color: white;
+  }
+
   footer {
+      padding: 6rem;
       margin: 0;
       background-color: var(--PrimaryColor);
       width: 100%;
@@ -402,12 +405,17 @@
       color: white;
       line-height: 1.6rem;
   }
-
-  footer .Container ul {
-      display: flex;
-      color: white;
+  footer .Container .box ul {
+    display: flex;
+    font-weight: 450;
+    font-size: 2rem;
+    padding: .8rem;
+}
+  footer .Container .box li {
       font-weight: 450;
       margin: var(--m1);
+      font-size: 2rem;
+      padding: .8rem;
   }
 
   /* --------------------------------free --------------------------------*/
@@ -487,9 +495,10 @@
           padding: var(--mobilePadding);
       }
 
-      .about .Container{
-        padding: 0 1rem;
-    }
+      .about .Container {
+          padding: 0 1rem;
+      }
+
       .fundrise {
           padding: var(--mobilePadding);
           height: 100%;
@@ -592,6 +601,10 @@
       .reverse {
           display: flex;
           flex-direction: column-reverse;
+      }
+
+      footer {
+          padding: var(--mobilePadding);
       }
 
       footer .box {
