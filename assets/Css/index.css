@@ -405,12 +405,14 @@
       color: white;
       line-height: 1.6rem;
   }
+
   footer .Container .box ul {
-    display: flex;
-    font-weight: 450;
-    font-size: 2rem;
-    padding: .8rem;
-}
+      display: flex;
+      font-weight: 450;
+      font-size: 2rem;
+      padding: .8rem;
+  }
+
   footer .Container .box li {
       font-weight: 450;
       margin: var(--m1);
@@ -610,5 +612,11 @@
       footer .box {
           font-family: var(--ContentFamily);
           width: 100%;
+      }
+
+      footer .Container .box ul,
+      footer .Container .box li {
+          font-size: 1.2rem;
+          padding: .2rem;
       }
   }
