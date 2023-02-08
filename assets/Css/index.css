@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@100;400&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&family=Noto+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500&display=swap');
 :root {
     --Headers: #0E7E53;
     --margin: 0;
@@ -8,7 +6,7 @@
     --padding: 6rem;
     --mainMargin: 6rem 0;
     --paddingNav: 2rem 6rem;
-    --fontFamily: 'Inter';
+    --fontFamily: 'Open Sans', sans-serif;
     /* --ContentFamily: 'Montserrat'; */
     --PrimaryColor: #2DD393;
     --mainColor: #888888;
@@ -28,6 +26,7 @@
 }
 
 * {
+   font-family: var(--fontFamily);
     box-sizing: border-box;
     list-style: none;
     padding: 0;
@@ -149,7 +148,10 @@ button a {
 
 p {
     font-family: var(--fontFamily);
+    font-weight: 400;
     color: var(--mainColor);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .Container span {
@@ -374,14 +376,15 @@ footer .box {
 
 footer .Container li a,
 footer .box p {
-    color: white;
+   
+   font-family: var(--fontFamily); color: white;
     line-height: 1.6rem;
 }
 
 footer .Container ul {
     display: flex;
     color: white;
-    font-weight: 400;
+    font-weight: 450;
     margin: var(--m1);
 }
 
@@ -447,11 +450,8 @@ footer .Container ul {
         display: flex;
         flex-wrap: wrap;
     }
-
     .fundrise {
-        padding: var(--mobilePadding);
-    }
-
+    padding: var(--mobilePadding);}
     .fundrise h1 {
         font-size: 1.3rem;
         line-height: 3rem;
