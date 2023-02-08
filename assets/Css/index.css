@@ -149,7 +149,6 @@ button a {
 
 p {
     font-family: var(--fontFamily);
-    font-weight: 400;
     color: var(--mainColor);
 }
 
@@ -382,7 +381,7 @@ footer .box p {
 footer .Container ul {
     display: flex;
     color: white;
-    font-weight: 450;
+    font-weight: 400;
     margin: var(--m1);
 }
 
@@ -420,7 +419,6 @@ footer .Container ul {
 
     p {
         font-size: .8rem;
-        font-weight: 500;
     }
 
     .Container {
@@ -449,8 +447,11 @@ footer .Container ul {
         display: flex;
         flex-wrap: wrap;
     }
+
     .fundrise {
-    padding: var(--mobilePadding);}
+        padding: var(--mobilePadding);
+    }
+
     .fundrise h1 {
         font-size: 1.3rem;
         line-height: 3rem;
