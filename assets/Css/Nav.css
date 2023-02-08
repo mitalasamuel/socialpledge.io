@@ -38,7 +38,7 @@ nav h3 {
 
 nav a,
 .navContainer button a {
-    color: var(--mainColor);
+color: white;
     font-weight: var(--contentWeight);
 }
 
