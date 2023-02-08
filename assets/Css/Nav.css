@@ -1,8 +1,8 @@
 :root {
     --mainMargin: 6rem 0;
     --paddingNav: 2rem 6rem;
-    /* --fontFamily: 'Inter';
-    --ContentFamily: 'Montserrat'; */
+    --fontFamily: 'Inter';
+    --ContentFamily: 'Montserrat'; 
     --PrimaryColor: #2DD393;
     --mainColor: #888888;
     --contentWeight: 400;
@@ -19,7 +19,7 @@ nav {
     position: fixed;
     width: 100%;
     display: flex;
-    /* font-family: var(--fontFamily); */
+    font-family: var(--fontFamily);
     align-items: center;
     justify-content: space-between;
     padding: var(--paddingNav);
@@ -92,7 +92,7 @@ button a {
     height: 100vh;
     top: -2000%;
     font-size: var(--navLink);
-    /* font-family: var(--ContentFamily); */
+    font-family: var(--ContentFamily);
     line-height: 3rem;
 }
 
