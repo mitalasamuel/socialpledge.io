@@ -21,8 +21,8 @@
       --ccc: rgba(242, 241, 241, 0.754);
       --border: 1px solid #ccc;
       --formborder: .2px solid #ccc;
-      --tag: 0 1rem;
-      --gpadding: 0 3rem;
+      --tag: 1rem;
+      --gpadding: 10rem 3rem;
   }
 
   * {
@@ -81,7 +81,7 @@
 
   .pledgebar {
       background-color: goldenrod;
-      width: 70%;
+      width: 30%;
       height: .2rem;
   }
 
@@ -147,12 +147,15 @@
   .box {
       border: var(--border);
   }
-h4,h6{
-    font-family: var(--fontFamily);
-    font-weight: 600;
-    font-size: .9rem;
-    padding: .3rem 0;  
-}
+
+  h4,
+  h6 {
+      font-family: var(--fontFamily);
+      font-weight: 600;
+      font-size: .9rem;
+      padding: .3rem 0;
+  }
+
   p {
       font-family: var(--fontFamily);
       font-weight: 400;
@@ -184,8 +187,8 @@ h4,h6{
       color: var(--white);
       width: 40%;
       display: flex;
+
       flex-direction: column;
-      justify-content: center;
       padding: var(--gpadding);
       background-color: var(--PrimaryColor);
   }
@@ -202,15 +205,18 @@ h4,h6{
   .Greenface .amount,
   .Greenface .options,
   .Greenface textarea {
-      border-radius: 1rem;
+      border-radius: .4rem;
       border: none;
       padding: var(--mobilePadding);
-      box-shadow: 0 1rem 3rem 0 rgba(37, 36, 36, 0.722);
+      box-shadow: 0 1rem 3rem 0 rgba(144, 131, 131, 0.722);
       font-size: 1rem;
       background-color: var(--Headers);
       color: var(--white);
   }
-
+  .Greenface .amount,
+  .Greenface .options{
+    width: 17rem;
+  }
 
   .Greenface h2,
   .Greenface .Greenface h1,
@@ -237,7 +243,7 @@ h4,h6{
       position: absolute;
       outline: none;
       content: '';
-      margin-top: -7.5rem;
+      margin-top: -8rem;
       height: 10rem;
       width: .1rem;
   }
@@ -274,7 +280,7 @@ h4,h6{
       display: flex;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
 
       .main {
           margin: 0;
@@ -299,8 +305,8 @@ h4,h6{
 
       .Greenface .line::before {
 
-          margin-top: -3.6rem;
-          height: 5rem;
+          margin-top: -5rem;
+          height: 8rem;
           width: .1rem;
       }
 
@@ -310,9 +316,10 @@ h4,h6{
       }
 
       .LeftContent img {
-        border-radius: 0;
-        width: 100%;
-    }
+          border-radius: 0;
+          width: 100%;
+      }
+
       .content {
           padding: var(--mobilePadding);
       }
@@ -325,6 +332,10 @@ h4,h6{
       .bag form {
           margin: 0;
           padding: 5rem 1rem;
+      }
+      .Greenface .amount,
+      .Greenface .options{
+        width: 100%;
       }
 
   }

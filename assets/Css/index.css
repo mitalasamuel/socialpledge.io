@@ -124,13 +124,13 @@
       border: 1px solid var(--PrimaryColor);
       padding: .7rem 2rem;
       font-size: var(--fontSize);
-      background-color: var(--PrimaryColor);
+      /* background-color: var(--PrimaryColor); */
       border-radius: .4rem;
   }
 
 
   button a {
-      color: white;
+      /* color: white; */
       font-size: .9rem;
   }
 
@@ -207,113 +207,6 @@
       margin: 8rem 6rem;
   }
 
-  /* -------------------------Dashboard------------------------- */
-  .Mainbody {
-      font-family: var(--fontFamily);
-      width: 90%;
-  }
-
-  .leftNav .BoxIcon {
-      padding: 1rem;
-  }
-
-  .leftNav {
-      height: 100vh;
-      box-shadow: 0 0 1rem 0 var(--box);
-      padding: 1rem;
-  }
-
-  .ContainerBoard {
-      display: flex;
-  }
-
-  .leftNav .BoxIcon img {
-      width: 30px;
-  }
-
-  .Logout {
-      bottom: 0;
-      position: absolute;
-  }
-
-  .Mainbody P {
-      color: #8990AD;
-  }
-
-  .Mainbody .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .mainContainer button {
-      background-color: var(--PrimaryColor);
-      font-size: .9rem;
-      margin: var(--m1);
-  }
-
-  .mainContainer button a {
-      color: white;
-  }
-
-  hr {
-      background-color: #ccc;
-      border: none;
-      margin: var(--mhr);
-      height: .01rem;
-  }
-
-  .TopNav {
-      padding: 2rem;
-  }
-
-  .TopNav button {
-      background-color: var(--PrimaryColor);
-      font-size: 1rem;
-  }
-
-  .TopNav button a {
-      font-size: .9rem;
-      color: white;
-      letter-spacing: .1rem;
-
-  }
-
-  .TopNav img {
-      border-radius: 50%;
-      height: 3rem;
-      margin: var(--mhr);
-      /* border: 1px solid palevioletred; */
-  }
-
-  .Special {
-      background-color: var(--spcial);
-      padding: 1rem 0;
-  }
-
-  .mainimg {
-      /* border: 1px solid red; */
-      height: 100%;
-      width: 30%;
-      object-fit: cover;
-      aspect-ratio: 3/3;
-  }
-
-  .mainContainer {
-      /* height: 70vh; */
-      display: flex;
-      box-shadow: 0 0 1rem 0 var(--box);
-      padding: 0 1rem;
-      /* height: 60vh; */
-      width: 100%;
-      justify-content: space-between;
-  }
-
-  .mainContainer .Content {
-      /* border: 1px solid red; */
-      width: 100%;
-  }
-
   .tag {
       background-color: var(--footerContent);
       color: var(--mainColor);
@@ -353,6 +246,16 @@
       width: 100%;
       align-items: center;
       justify-content: center;
+
+  }
+
+  .white {
+      border: 1px solid red;
+      background-color: red;
+  }
+
+  .white a {
+      color: var(--PrimaryColor);
 
   }
 
