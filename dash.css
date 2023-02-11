@@ -1,5 +1,6 @@
-/* -------------------------Dashboard------------------------- */
-.Mainbody {
+
+  /* -------------------------Dashboard------------------------- */
+  .Mainbody {
     font-family: var(--fontFamily);
     width: 90%;
 }
@@ -9,11 +10,9 @@
 }
 
 .leftNav {
-    background: rgb(5, 62, 40);
-    background: linear-gradient(90deg, rgba(5, 62, 40, 1) 0%, rgb(13, 86, 58) 35%, rgba(5, 62, 40, 1) 100%);
     height: 100vh;
     box-shadow: 0 0 1rem 0 var(--box);
-    padding: 8rem 1rem;
+    padding:8rem 1rem;
 }
 
 .ContainerBoard {
