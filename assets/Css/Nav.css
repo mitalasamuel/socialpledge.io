@@ -41,10 +41,10 @@ nav a,
 color: white;
     font-weight: var(--contentWeight);
 }
-
+/* 
 .navContainer button {
     background-color: transparent;
-}
+} */
 
 button a {
     color: white;
